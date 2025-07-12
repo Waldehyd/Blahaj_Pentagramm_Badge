@@ -19976,8 +19976,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "Blahaj Pentagramm Badge\nv2.0 (2024)\nWaldo\nund\nvielleicht Peter"
-		(at 166 157.5 270)
+	(gr_text "Blahaj Pentagramm Badge\nv3.0 (2025)\nWaldo\nund\nvielleicht Peter\nund wahrscheinlich auch Mona"
+		(at 165.243 156.763 270)
 		(layer "B.SilkS")
 		(uuid "17e32741-395f-4518-bcc9-79ca1d3ad9a8")
 		(effects

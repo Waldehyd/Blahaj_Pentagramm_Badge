@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "8.0.8"
     },
-    "CreationDate": "2025-04-09T13:22:33+02:00"
+    "CreationDate": "2025-02-21T16:52:39+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "Haibadge_B",
-      "GUID": "48616962-6164-4676-955f-422e6b696361",
+      "Name": "Blahaj_Pentagramm_Badge_Front",
+      "GUID": "426c6168-616a-45f5-9065-6e7461677261",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 79.908,
-      "Y": 79.908
+      "X": 0.0,
+      "Y": 0.0
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -26,55 +26,32 @@
       "Layers": "Outer",
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
-      "TrackToTrack": 0.2,
-      "MinLineWidth": 0.2,
-      "TrackToRegion": 0.4,
-      "RegionToRegion": 0.4
+      "TrackToTrack": 0.2
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "Haibadge_B-F_Cu.gbr",
+      "Path": "Blahaj_Pentagramm_Badge_Front-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Haibadge_B-B_Cu.gbr",
-      "FileFunction": "Copper,L2,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "Haibadge_B-F_Paste.gbr",
+      "Path": "Blahaj_Pentagramm_Badge_Front-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Haibadge_B-B_Paste.gbr",
-      "FileFunction": "SolderPaste,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "Haibadge_B-F_Silkscreen.gbr",
+      "Path": "Blahaj_Pentagramm_Badge_Front-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Haibadge_B-B_Silkscreen.gbr",
-      "FileFunction": "Legend,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "Haibadge_B-F_Mask.gbr",
+      "Path": "Blahaj_Pentagramm_Badge_Front-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "Haibadge_B-B_Mask.gbr",
-      "FileFunction": "SolderMask,Bot",
-      "FilePolarity": "Negative"
-    },
-    {
-      "Path": "Haibadge_B-Edge_Cuts.gbr",
+      "Path": "Blahaj_Pentagramm_Badge_Front-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
