@@ -1,7 +1,13 @@
 #import "@preview/mantys:1.0.2": *
 #import "@preview/subpar:0.2.2"
+#import "Theme/modernCustom.typ": modernCustom
+
+
+
+
 
 #show: mantys(
+  
   name: "mantys",
   version: "1.0.0",
   authors: (
@@ -19,7 +25,7 @@
   title: "The Shorktagram Badge",
   // subtitle: "Tagline",
   date: datetime.today(),
-
+  cover: figure(image("/images/Front.png", width: 78%)),
 
   abstract: [
   The Shorktagram-Bade features a beautiful PCB Frontplate backed with 15 individually controllable LEDs, Temperature and Humidity Sensor as well as a Motion Sensor. This setup makes it prone to be used as an air sensor by day and a nightlight by... night.
@@ -30,13 +36,15 @@
   //   imports: (:)
   // )
 
-theme: themes.modern
+theme: modernCustom
 )
+
 
 #set par(
   spacing: 2em,
   leading: 0.85em,
 )
+
 
 
 = Flashing the Firmware
