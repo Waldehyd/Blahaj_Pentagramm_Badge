@@ -118,7 +118,7 @@
 
 #let title-page(doc, theme) = {
   set align(center)
-  v(1fr)
+  v(2fr)
 
     
   block(
@@ -149,7 +149,6 @@
     doc.cover
 }
 
-  v(2fr)
   pad(
     x: 10%,
     {
@@ -157,7 +156,7 @@
       doc.abstract
     },
   )
-  v(2fr)
+  v(1fr)
   if doc.show-outline {
     std.heading(level: 2, outlined: false, numbering: none, "Table of Contents")
     columns(
