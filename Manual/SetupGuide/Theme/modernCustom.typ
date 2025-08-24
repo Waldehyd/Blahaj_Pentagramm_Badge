@@ -156,16 +156,17 @@
       doc.abstract
     },
   )
-  v(1fr)
-  if doc.show-outline {
-    std.heading(level: 2, outlined: false, numbering: none, "Table of Contents")
-    columns(
-      2,
-      outline(title: none),
-    )
-  }
   v(2fr)
-  pagebreak()
+
+
+if doc.show-outline {
+  std.heading(level: 2, outlined: false, numbering: none, "Table of Contents")
+  v(1em) // add spacing
+  block(height: 12fr, columns(2, outline(title: none)))
+
+}
+  v(2fr)
+
 }
 
 #let last-page(doc, theme) = { }

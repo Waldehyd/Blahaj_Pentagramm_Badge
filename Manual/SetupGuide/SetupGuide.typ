@@ -45,6 +45,87 @@ theme: modernCustom
   leading: 0.85em,
 )
 
+= Assembly Part 1: PCB
++ Take the parts out of the bag. You only need the PCB which will contain the electronics for now.
++ Either apply solderpaste yourself or get help from the soldering team.
++ Open the IBOM of the repo (PCB/PCB_Back/bom/ibom.html) and start placing the parts with a pair of tweezers. The parts in the box are sorted in the order in which they are needed.
++ When you are done with the first side, put the PCB in the oven and bake it for the first time.
++ Wait until the PCB has cooled of and continue placing the parts on the other side. Please skip the hand-solder parts for now.
++ Bake the other side of the PCB.
++ Take a look at the PCB and search for shorts and errors on the placed parts. Remediate these errors before you continue. If needed, get help from your local shorktagram-dealer.
++ Hand-solder the last two parts onto the PCB. Solder on the USB-C connector legs. DO THIS BEFORE YOU PLUG IN A USB CABLE.
++ Connect your PCB to your computer and see if the ESP shows up. If so: Congratulation, you are done with the hardest part. Please return your empty tray to the workshop-hosts. If you want, they can also flash your Shorktagram-Badge
+
+
+= Assembly Part 2: Case
+
+
++ Take the little bag with the screws and the standoffs. Screw the Faceplate onto the PCB with the standoffs in between.
+
+
+    #subpar.grid(
+    figure(image("/Images/Standoffs.png", width: 80%)),
+    columns: (1fr),
+  )
+
+
++ Next you will need the battery and the velcro-tape. If you are planning on using the battery, apply one of the sides of the velcro to the battery-box-area on the pcb and the other side to the battery. 
+
+  #subpar.grid(
+    figure(image("/Images/Velcro.png", width: 90%)),
+    columns: (1fr),
+  )
+
++ Attach and plug in the Battery.
+
+    #subpar.grid(
+    figure(image("/Images/AttachLipo.png", width: 80%)),
+    columns: (1fr),
+  )
+
+
++ Take the case-shell and place the PCB in the correct orientation inside. 
+
+  #subpar.grid(
+    figure(image("/Images/Fullcase.png", width: 90%)),
+    columns: (1fr),
+  )
+
+
++ Close the case with the three screws on the sides.
+
+  #subpar.grid(
+    figure(image("/Images/CaseScrew.png", width: 60%)),
+    columns: (1fr),
+  )
+
+
++ Put the PIR sensor into its housing, close it and plug in the right-angled connector.
+
+  #subpar.grid(
+    figure(image("/Images/AssembleSensor.png", width: 100%)),
+    columns: (1fr),
+  )
+
++ Plug in the PIR via the 3-Pin connector and attach it with two screws.
+
+  
+  #subpar.grid(
+    figure(image("/Images/SensorScrewToCase.png", width: 100%)),
+    columns: (1fr),
+  )
+
++ Screw in two screws into the mounting plate (towards the side with cutouts). Optionally, push through the hook. You attach the mounting plate by pushing and turning them in the oblong holes.
+
+
+  #subpar.grid(
+    figure(image("/Images/MountScrew.png", width: 100%)),
+    figure(image("/Images/Mount.png", width: 100%)),
+    columns: (1fr, 1fr),
+  )
+
+
+
 
 
 = Flashing the Firmware
@@ -55,8 +136,8 @@ The Shorktagram-Badge is powered by WLED. As we use Usermods to support the PIR 
 
 
 
-+ Clone or Download the latest Version of WLED from Github
-+ Replace the platformio.ini by the one in the /Firmware folder of Shorktagram-Badge Repository (https://github.com/wled/WLED)
++ Clone or Download the latest Version of WLED from Github (https://github.com/wled/WLED)
++ Replace the platformio.ini by the one in the /Firmware folder of Shorktagram-Badge Repository 
 + Connect the Badge to your computer via USB (if it's not recognized as a serial device, it's likely a soldering problem) 
 + Open the WLED-Folder in VSCode
 + Choose the correct serial port of your Badge (if multiple devices are connected) and then hit Upload!
@@ -158,13 +239,6 @@ WLED does not save your light settings without being explicitly. After setting u
    columns: (1fr,1fr,1fr),
 )
 
-= Assembling the Case
-
-The case is the 3D-Printed, all .stl files can be found in the /Case directory of the repository. 
-
-
 = Notes on Usage
 
 As running the LEDs for a while results in the Badge heating up quite a bit, the sensor readings from the BME280 become unreliable for air measurements. As such, it's recommended to use the BME280 for setups where the LEDs aren't used continuously, e.g. when using the PIR in conjunction with a nighttime timer for the pathway to your bathroom.
-
-
