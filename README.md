@@ -2,6 +2,8 @@
 
 The Shorktagram-Badge features a beautiful PCB-Frontplate backed with 15 individually controllable LEDs, Temperature and Humidity Sensor as well as an optional Motion Sensor. This setup makes it ideal to be used as an air sensor by day and a nightlight by uh... night.
 
+IBOM:
+https://htmlpreview.github.io/?https://github.com/Waldehyd/Blahaj_Pentagramm_Badge/ibom/ibom.html
 
 Firmware:
 
